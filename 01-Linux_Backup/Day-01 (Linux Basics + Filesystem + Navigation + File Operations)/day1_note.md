@@ -1,0 +1,161 @@
+# Day 1 — Linux Basics + Filesystem + Navigation + File Operations
+
+## Today we learn command fundamentals of Linux
+
+- Common commands:
+	- ls: list directory contents
+	- cd: change directory
+	- pwd: print working directory
+	- cp / mv / rm: copy, move, remove files
+	- mkdir: create directories
+	- man: view manual pages
+    - rmdir: 
+    - touch: 
+    - cat:
+    - clear:
+    - history:
+
+- Basis understanding of linux:
+    - File and folder operations from the terminal
+    - What hidden files are
+    - Using tab completion and command history
+    - How to think while running commands
+
+## Why these commands are matters
+
+Everyone in DevOps talks about Docker, Kubernetes, and Terraform.
+
+But if someone is not comfortable with the Linux terminal, they will keep getting stuck everywhere later:
+
+    - Difficulty to understanding Docker files
+    - Problems with Jenkins agents/runners
+    - Trouble logging into EC2 instances and configuring them
+    - Difficulty checking logs
+    - Trouble troubleshooting Kubernetes pods
+    - Confusion around file permissions and configuration paths
+
+The truth is simple:
+If your Linux foundation is weak, your DevOps foundation will also be weak.
+If your Linux foundation is strong, everything else becomes much easier to learn and handle.
+
+One good thing in your case is that you have already worked with infrastructure, servers, and admin-side tasks.
+
+So we are not going to study Linux at a school level, we will learn Linux from a DevOps-oriented perspective.
+
+## 3) Today’s Outcome
+
+By the end of today, you will be able to:
+
+    - Create, delete, and manage folders from the terminal
+    - Copy, move, and remove files
+    - Understand paths clearly
+    - Build a mental map of the Linux filesystem
+    - Set up your own practice lab folder, which will be used throughout the entire roadmap
+
+### Part A — Understand Linux (15–20 min) - Step by Step
+
+#### What is Linux?
+
+In simple words:
+
+    - Linux is a family of operating systems, and it is an open source operating system that mean any developer or users can modified the operating system.
+    - It is extremely common in the server world.
+    - You will find Linux everywhere in DevOps, on AWS EC2 instances, Docker containers, Kubernetes nodes, Jenkins servers, and more.
+
+#### Where is Linux used from a DevOps perspective?
+
+Linux is commonly used in:
+
+    - AWS EC2 servers
+    - Docker containers
+    - Kubernetes worker nodes
+    - Jenkins servers and agents
+    - Ansible target machines
+    - Log files, application configurations, and deployments
+
+## 4) Basic Map of Linux
+
+In Linux, everything exists under the root directory `/`.
+
+### Important Directories
+
+    - `/` → Root of the filesystem
+    - `/home` → Home folders for users
+    - `/etc` → Configuration files
+    - `/var` → Logs and other variable data
+    - `/tmp` → Temporary files
+    - `/usr` → Installed programs and utilities
+    - `/opt` → Optional software
+    - `/bin` → Basic commands
+    - `/sbin` → System and administrative commands
+
+### Example
+
+If the user is **sairam**, their home directory might be:
+
+`/home/sairam`
+
+## 5) Absolute vs Relative Path
+
+### Absolute Path
+
+An **absolute path** is the complete path starting from the root directory `/`.
+
+**Example:**
+
+`/home/sairam/devops/day1`
+
+### Relative Path
+
+A **relative path** depends on your current location in the terminal.
+
+For example, if you are already inside `/home/sairam`, then you can use:
+
+`cd devops/day1`
+
+## 6) Commands
+
+    1. pwd : Present working directory. It tells you which folder you are currently in.
+
+    2. ls : List files and folders
+        ls -l : Detailed view is showing
+
+        ls -a : It shows hidden files within the directories.
+            You may see output like this:
+
+            .  ..  .bashrc  .profile  Documents  Downloads
+
+            What it means
+
+            . → Current directory
+            .. → Parent directory
+            .bashrc → Hidden file
+            .profile → Hidden file
+            Documents / Downloads → Normal visible folders
+
+    3. `cd` : To change directory
+    `cd ..` → Move to the parent directory
+     `cd ~` → Move to the home directory of the current user
+     `cd /` → Move to the root directory
+
+    4. mkdir : To create folder
+        mkdir - p : To nested create folder
+
+    5. rmdir : To remove empty folder
+
+    6. touch : To create new file
+
+    7. cp : To copy file
+        Example : cp /E/DevOps-Notes/01-Linux/Day-01\ \(Linux\ Basics\ +\ Filesystem\ +\ Navigation\ +\ File\ Operations\)/day1_note.md /E/DevOps-Notes/01-Linux/Day-08/notes.txt
+
+        cp -r : To copy folder or take backup any folder
+        Example : cp -r /E/DevOps-Notes/01-Linux/ /E/DevOps-Notes/01-Linux_Backup
+
+    8. mv : Move file or folder
+        
+
+
+    9. rm
+    10. cat
+    11. clear
+    12. history
