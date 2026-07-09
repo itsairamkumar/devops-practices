@@ -168,3 +168,26 @@ For example, if you are already inside `/home/sairam`, then you can use:
     10. cat
     11. clear
     12. history
+    
+## Pull an Existing GitHub Repository into a New Local Folder
+
+If the GitHub repository already exists and you want to bring that repository into a new folder on your local machine, follow these steps:
+
+### Steps
+
+1. Create a new folder on your local machine and move into it.
+2. Initialize Git in that folder.
+3. Add the GitHub repository as the remote origin.
+4. Rename the local branch to `main` if the default branch is `master`.
+5. Pull the existing content from the GitHub repository into your local folder.
+
+### Commands
+
+```bash
+mkdir devops-practices : Creates a new folder named devops-practices
+cd devops-practices : Moves into that folder.
+git init : Initializes an empty Git repository in the current folder.
+git remote add origin https://github.com/itsairamkumar/devops-practices.git : Connects your local repository to the existing GitHub repository.
+git branch -m main : Renames the current local branch to main.
+git pull origin main : Pulls the existing files and commit history from the GitHub repository into your local folder.
+
