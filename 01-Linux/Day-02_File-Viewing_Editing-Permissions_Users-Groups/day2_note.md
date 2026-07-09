@@ -101,7 +101,18 @@ That is why Day 2 is highly practical and very important.
 
     - 6. > vs >> : This is very important
 
+        > : It overwrites the file content, meaning the old content is removed and replaced with new content.
+
+            Example : echo "Myself krishna" > notes.md
+
+        >> : It appends content to a file, meaning the new content is added below the existing content.
+
+            Example : echo "Myself krishna, how's your day?" >? notes.md
+        
+        > = replace
+        >> = add below
+
 ## Part C - Basic Editor use
 
-    - 7. nano
+    - 7. nano : 
     - 8. vi / vim basics
