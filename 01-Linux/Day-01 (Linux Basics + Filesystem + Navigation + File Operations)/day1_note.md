@@ -165,10 +165,18 @@ For example, if you are already inside `/home/sairam`, then you can use:
         
         Example : rm -r /E/DevOps-Notes/01-Linux/Day-08
 
-    10. cat
-    11. clear
-    12. history
-    
+    10. cat : It is used to view the contents of a file.
+        
+        Example : cat day1_note.md
+
+    11. clear : It is used to clear the terminal screen.
+
+        Example : clear
+
+    12. history : It is used to view previously executed commands in the terminal.
+        
+        Example : history
+
 ## Pull an Existing GitHub Repository into a New Local Folder
 
 If the GitHub repository already exists and you want to bring that repository into a new folder on your local machine, follow these steps:
