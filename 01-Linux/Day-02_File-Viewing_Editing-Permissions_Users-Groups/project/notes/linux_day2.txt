@@ -1,0 +1,6 @@
+linux day 2 notes
+cat shows full file content
+head shows first lines
+tail shows last lines
+less is useful for large files
+less is useful for large files echo whoami tells current logged-in user echo id shows currect uid, gid
