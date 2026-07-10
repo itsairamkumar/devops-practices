@@ -115,4 +115,4 @@ That is why Day 2 is highly practical and very important.
 ## Part C - Basic Editor use
 
     - 7. nano : 
-    - 8. vi / vim basics
+    - 8. vi / vim basics :
