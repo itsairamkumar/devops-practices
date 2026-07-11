@@ -1,6 +1,5 @@
 linux day 2 notes
-cat shows full file content
+cat show full file content
 head shows first lines
 tail shows last lines
-less is useful for large files
-less is useful for large files echo whoami tells current logged-in user echo id shows currect uid, gid
+next goal is simple echo try to understand every concept in your own language first. echo for now i'll use a few git commands echo git remote -v to check remote status echo git remote add origin url path to add remote echo git remote remove origin url path to remove remote echo git fetch origin to download latest changes echo git pull origin main to fetch the data and merge it echo git push -u origin main to first time push the local data into remote  
