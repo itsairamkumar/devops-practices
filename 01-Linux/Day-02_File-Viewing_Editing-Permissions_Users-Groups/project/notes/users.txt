@@ -1,0 +1,5 @@
+current user info:
+Sai
+uid=197609(Sai) gid=197121 groups=197121
+197121
+Master

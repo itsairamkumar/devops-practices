@@ -1,0 +1,13 @@
+priority 1 - linux
+priority 2 - networking
+priority 3 - git
+priority 4 - aws, gcp, azure
+priority 5 - system design
+priority 6 - docker
+priority 7 - kubernetes
+priority 8 - jenkins
+priority 9 - terraform
+priority 10 - ansible
+priority 11 - monitoring
+priority 12 - devsecops
+priority 13 - python

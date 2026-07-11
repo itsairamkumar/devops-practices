@@ -1,0 +1,4 @@
+r stands read
+w stands write
+x stands execute
+r+x stands read and execute
