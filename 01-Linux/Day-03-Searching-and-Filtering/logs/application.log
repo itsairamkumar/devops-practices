@@ -1,0 +1,10 @@
+INFO Server Started
+INFO User Login Successful
+WARNING CPU Usage High
+ERROR Database Connection Failed
+INFO Backup Started
+ERROR Login Failed
+INFO Backup Completed
+WARNING Disk Usage 90%
+ERROR Payment Gateway Timeout
+INFO Server Running Normally

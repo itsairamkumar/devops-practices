@@ -44,7 +44,71 @@ This is real DevOps. It's not about memorizing commands. It's about using the ri
 Day 3 we focuses on some of the most essential Linux commands used by DevOps engineers in real-world production environments.
 
 ### Part A — grep
-We'll begin with **`grep`**, which allows you to search for specific words or patterns inside files—an essential skill for analyzing logs and troubleshooting issues.
+We'll begin with **`grep`**, which allows you to search for specific words or patterns inside files, an essential skill for analyzing logs and troubleshooting issues.
+
+Think of grep as a search tool. It looks for a specific word or pattern inside a file and displays the lines where it is found.
+
+### Practice Environment
+By the end of day 3, we'll be able to confidently use:
+
+    - grep : Search text inside file
+
+        Example : grep ERROR application.log
+
+        Lab : Introduction to `grep`
+
+        In this lab, we will create a sample production log file and learn how to use the `grep` command to search for specific log entries.
+
+        Step 1: Create the required folders
+
+            mkdir logs notes practice
+    
+        Step 2: Move to the `logs` directory
+
+            cd logs
+        
+        Step 3: Create a fake production log file
+
+            touch application.log
+        
+        Step 4: Add sample log data
+
+            echo "INFO Server Started" > application.log
+            echo "INFO User Login Successful" >> application.log
+            echo "WARNING CPU Usage High" >> application.log
+            echo "ERROR Database Connection Failed" >> application.log
+            echo "INFO Backup Started" >> application.log
+            echo "ERROR Login Failed" >> application.log
+            echo "INFO Backup Completed" >> application.log
+            echo "WARNING Disk Usage 90%" >> application.log
+            echo "ERROR Payment Gateway Timeout" >> application.log
+            echo "INFO Server Running Normally" >> application.log
+        
+        Step 5: Display the file content
+
+            cat application.log
+        
+        Step 6: Search for all `ERROR` entries
+
+            grep ERROR application.log
+
+        Real-World DevOps Scenario
+
+        Imagine a production server generates 500,000+ log entries every day.
+
+        Instead of reading the entire log file manually, you can use:
+
+            grep ERROR application.log
+        
+        This command instantly filters the log file and shows only the **ERROR** entries, helping DevOps engineers identify and troubleshoot issues within seconds.
+
+    - grep -i : 
+    - grep -n
+    - grep -v
+    - grep -c
+    - grep -r
+    - grep -w
+
 
 ### Part B — find
 Next, we'll learn **`find`**, a powerful command for locating files and directories anywhere in the filesystem.
