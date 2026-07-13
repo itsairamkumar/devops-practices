@@ -109,12 +109,12 @@ By the end of day 3, we'll be able to confidently use:
             
         This command instantly filters the log file and shows only the **ERROR** entries, helping DevOps engineers identify and troubleshoot issues within seconds.
 
-    - grep -i : 
-    - grep -n
-    - grep -v
-    - grep -c
-    - grep -r
-    - grep -w
+    - grep -i : -i option makes the search case-insensitive. It ignores uppercase and lowercase differences.
+    - grep -n : 
+    - grep -v : 
+    - grep -c : 
+    - grep -r : 
+    - grep -w : 
 
 
 ### Part B — find
