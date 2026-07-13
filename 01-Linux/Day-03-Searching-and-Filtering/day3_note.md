@@ -39,7 +39,7 @@ This command instantly filters the log and displays only the lines containing `E
 This is real DevOps. It's not about memorizing commands. It's about using the right command at the right time to solve real-world problems quickly and efficiently.
 
 
-## What We'll Learn Today
+## What We'll Learn Day 3
 
 Day 3 we focuses on some of the most essential Linux commands used by DevOps engineers in real-world production environments.
 
