@@ -102,7 +102,7 @@ By the end of day 3, we'll be able to confidently use:
         
         This command instantly filters the log file and shows only the **ERROR** entries, helping DevOps engineers identify and troubleshoot issues within seconds.
 
-    - grep -i : 
+    - grep -i : Search info
     - grep -n
     - grep -v
     - grep -c
