@@ -98,11 +98,18 @@ By the end of day 3, we'll be able to confidently use:
 
         Instead of reading the entire log file manually, you can use:
 
+            Example 1 : 
             grep ERROR application.log
-        
+
+            Example 2 : 
+            grep INFO application.log
+
+            Example 3 :
+            grep WARNING application.log
+            
         This command instantly filters the log file and shows only the **ERROR** entries, helping DevOps engineers identify and troubleshoot issues within seconds.
 
-    - grep -i : Search info
+    - grep -i : 
     - grep -n
     - grep -v
     - grep -c
