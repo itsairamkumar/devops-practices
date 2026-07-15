@@ -139,6 +139,8 @@ By the end of day 3, we'll be able to confidently use:
 ### Part B — find
 Next, we'll learn **`find`**, a powerful command for locating files and directories anywhere in the filesystem.
 
+
+
 ### Part C — wc and sort
 We'll then explore **`wc`** to count lines, words, and characters, followed by **`sort`** to organize data alphabetically or numerically.
 
