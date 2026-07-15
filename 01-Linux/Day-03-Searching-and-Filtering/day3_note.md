@@ -110,11 +110,30 @@ By the end of day 3, we'll be able to confidently use:
         This command instantly filters the log file and shows only the **ERROR** entries, helping DevOps engineers identify and troubleshoot issues within seconds.
 
     - grep -i : -i option makes the search case-insensitive. It ignores uppercase and lowercase differences.
-    - grep -n : 
-    - grep -v : 
-    - grep -c : 
-    - grep -r : 
-    - grep -w : 
+
+        Example : grep -i  error application.log
+
+    - grep -n : -n option displays the line number along with each matching line. This helps you identify exactly where an ERROR, WARNING, or any other searched word appears in the file
+
+    In simple way to understand, it searches for a specific word and shows the line number where it is found.
+
+        Example : grep -n error application.log
+
+    - grep -v : -v option displays all lines that do not match the specified word or pattern
+
+        Example : grep -v 
+
+    - grep -c : -c option counts how many lines contain the searched word or pattern instead of displaying the matching lines.
+
+        Example : grep -c ERROR application.log
+
+    - grep -r : -r option searches for a word or pattern recursively in all files and subdirectories within a directory.
+
+        Example : grep -r INFO application.log
+
+    - grep -w : -w option searches for an exact whole word. It matches only the complete word and ignores words that merely contain it as a part.
+
+        Example : grep -w WARNING application.log
 
 
 ### Part B — find
