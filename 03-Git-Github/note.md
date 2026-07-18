@@ -7,15 +7,21 @@ Before working with Git, you should set your username and email address. Git use
 
 So, the first thing we need to do is tell Git who we are by setting our name and email address.
 
-git bash par jake kahin par bhi wahan ek command run karna he
-jaise ki
+Open Git Bash and run the following commands from anywhere:
 
-$ git config --global user.name "A Sairam Kumar Patro" then hit enter
-$ git config --global user.email "itsairamkumar@gmail.com then hit enter
+$ git config --global user.name "A Sairam Kumar Patro"
 
-aap yahan email par jo bhi mail address dal sakte ho aisa nahi he ki sirf wohi git bala mail dalna he.
+Press Enter.
 
-agar check karna he konsa name and email set kiya gaya he so simply use this command
+Then run:
+
+$ git config --global user.email "itsairamkumar@gmail.com"
+
+Press Enter again.
+
+Note: You can use any valid email address you want. It doesn't have to be the same email address you use for your GitHub account. However, if you want your commits to appear as linked to your GitHub profile, it's recommended to use the email associated with your GitHub account.
+
+Now, if you want to verify which username and email are currently configured, simply run:
 
     - git config : Checks the username for the current repository. If it's not set locally, Git may show the effective value from a higher level.
 
@@ -26,3 +32,5 @@ agar check karna he konsa name and email set kiya gaya he so simply use this com
     - git config --global : Checks the username stored in your global Git configuration.
     Example : $ git config --global user.name
               $ git config --global user.email
+
+### Git Basic Commands
