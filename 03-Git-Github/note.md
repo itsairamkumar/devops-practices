@@ -1,6 +1,3 @@
-# Git and Github Note
-## Day 1
-
 ### 1. Setting up personal info
 ---
 Before working with Git, you should set your username and email address. Git uses this information to identify who made each commit, so it's an important first step.
@@ -111,3 +108,15 @@ This command displays **all files and folders**, including hidden ones (such as 
         - The commit message    
 
     >$ git log
+
+- git
+    The git log command displays the commit history of your Git repository. It shows detailed information about every commit, including:
+
+        - Who made the commit (Author)
+        - When the commit was made (Date)
+        - The unique commit ID (Hash)
+        - The commit message
+    
+    Example :
+    >$ git log
+
