@@ -61,3 +61,43 @@ Since the .git folder is hidden by default, you won't see it in File Explorer. T
 
 Once you've enabled hidden items, you'll be able to see the .git folder inside your project directory.
 
+Here's a polished, technically accurate version for your tutorial:
+
+The second way to view hidden files is by using the `ls -al` command.
+
+>$ ls -al
+
+
+This command displays **all files and folders**, including hidden ones (such as the `.git` directory).
+
+- git status
+
+    The `git status` command shows the current state of your repository. It tells you which files are:
+
+    * Untracked (new files Git isn't tracking yet)
+    * Modified (files that have been changed)
+    * Staged (files ready to be committed)
+
+    >$ git status
+
+- git add
+
+    The `git add` command adds a specific file to the staging area. Only the file you specify will be staged.
+
+    > $ git add note.md
+
+- git add .
+
+    The `git add .` command stages all new and modified files in the current directory and its subdirectories.
+
+    > $ git add .
+
+- git commit
+
+    The `git commit` command saves the changes that are currently in the staging area. You can think of a commit as taking a snapshot of your project at that point in time.
+
+    > $ git commit -m "Add a meaningful commit message"
+
+    For example:
+    >$ git commit -m "Create README file"
+
