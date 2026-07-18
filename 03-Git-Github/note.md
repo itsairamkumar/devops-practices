@@ -109,14 +109,3 @@ This command displays **all files and folders**, including hidden ones (such as 
 
     >$ git log
 
-- git
-    The git log command displays the commit history of your Git repository. It shows detailed information about every commit, including:
-
-        - Who made the commit (Author)
-        - When the commit was made (Date)
-        - The unique commit ID (Hash)
-        - The commit message
-    
-    Example :
-    >$ git log
-
