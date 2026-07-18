@@ -2,7 +2,7 @@
 ## Day 1
 
 ### Setting up personal info
-
+---
 Before working with Git, you should set your username and email address. Git uses this information to identify who made each commit, so it's an important first step.
 
 So, the first thing we need to do is tell Git who we are by setting our name and email address.
@@ -34,3 +34,4 @@ Now, if you want to verify which username and email are currently configured, si
               $ git config --global user.email
 
 ### Git Basic Commands
+---
