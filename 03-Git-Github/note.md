@@ -35,3 +35,29 @@ Now, if you want to verify which username and email are currently configured, si
 
 ### 2. Git Basic Commands
 ---
+There are several Linux commands you can use to create a file, such as cat, touch, vi, nano, and echo.
+
+In this example, I'll use the nano command to create a file.
+
+> $ nano test.txt
+
+**How do we create a local Git repository?**
+
+To create a local Git repository, we use the 'git init' command.
+
+The word init stands for initialize. When you run git init, Git initializes the current folder as a Git repository, allowing Git to start tracking changes in that project.
+
+> $ git init
+
+Whenever you run the git init command, Git creates a hidden folder named .git inside your project directory.
+
+This .git folder contains all the information Git needs to manage and track your project, such as commit history, branches, configuration, and other repository data.
+
+Since the .git folder is hidden by default, you won't see it in File Explorer. To view hidden files and folders in Windows, follow these steps:
+
+1. Open File Explorer.
+2. Click the View tab (or View > Show in Windows 11).
+3. Enable the Hidden items checkbox.
+
+Once you've enabled hidden items, you'll be able to see the .git folder inside your project directory.
+
