@@ -9,13 +9,13 @@ So, the first thing we need to do is tell Git who we are by setting our name and
 
 Open Git Bash and run the following commands from anywhere:
 
-$ git config --global user.name "A Sairam Kumar Patro"
+> $ git config --global user.name "A Sairam Kumar Patro"
 
 Press Enter.
 
 Then run:
 
-$ git config --global user.email "itsairamkumar@gmail.com"
+> $ git config --global user.email "itsairamkumar@gmail.com"
 
 Press Enter again.
 
