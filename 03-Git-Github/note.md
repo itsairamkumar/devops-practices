@@ -101,3 +101,5 @@ This command displays **all files and folders**, including hidden ones (such as 
     For example:
     >$ git commit -m "Create README file"
 
+- git log
+    
