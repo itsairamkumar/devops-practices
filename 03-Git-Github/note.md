@@ -97,6 +97,8 @@ This command displays **all files and folders**, including hidden ones (such as 
 
     For example:
     >$ git commit -m "Create README file"
+    
+    - In Git, options like -m, -u, -b, and -d are called flags. Flags modify the behavior of a command and make it more powerful. For example, -m lets you add a commit message, -u sets the upstream branch, -b creates a new branch, and -d deletes a branch.
 
 - git log
 
@@ -109,4 +111,44 @@ This command displays **all files and folders**, including hidden ones (such as 
 
     >$ git log
 
-- 
+#### Simple Definition of Staging area.
+
+The staging area is a temporary place where Git stores the changes you've selected before creating a commit.
+
+When you run the git add command, the selected file is moved to the staging area. This tells Git that you want to include this file in the next commit. Once you run the git commit command, Git permanently saves the staged changes in the repository.
+
+    Example :
+    Suppose your project contains five files:
+
+        - readme.md
+        - index.html
+        - style.css
+
+    Let's say you made changes only to README.md and index.html.
+
+    Now, if you run:
+
+    >$ git add readme.md
+    Only the README.md file will be added to the staging area.
+
+    Then, if you run:
+    >$ git add index.html
+    The index.html file will also be added to the staging area.
+
+    At this point, both README.md and style.css are in the staging area and are ready to be committed. The remaining files are not staged because they were never added.
+
+    Finally when you run:
+    >$ git commit -m "Update readme and index"
+
+    Git will create a commit containing only the files that are currently in the staging area.
+
+    1. What happens when we run git commit?
+
+        Whenever you run the git commit command, Git creates a snapshot of the staged changes. This snapshot represents the state of your project at that point in time.
+
+        Each commit is assigned a unique identifier called a commit hash. Git generates this hash using the SHA-1 (Secure Hash Algorithm 1) hashing algorithm. This hash uniquely identifies every commit in your repository.
+
+    2. Where are Git commits stored?
+
+        Git stores all commits inside the .git directory. More specifically, commit objects are stored in the .git/objects folder. This folder contains the commits, blobs (file contents), trees (directory structures), and other Git objects that make up your repository.
+
