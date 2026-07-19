@@ -97,7 +97,7 @@ This command displays **all files and folders**, including hidden ones (such as 
 
     For example:
     >$ git commit -m "Create README file"
-    
+
     - In Git, options like -m, -u, -b, and -d are called flags. Flags modify the behavior of a command and make it more powerful. For example, -m lets you add a commit message, -u sets the upstream branch, -b creates a new branch, and -d deletes a branch.
 
 - git log
@@ -152,3 +152,51 @@ When you run the git add command, the selected file is moved to the staging area
 
         Git stores all commits inside the .git directory. More specifically, commit objects are stored in the .git/objects folder. This folder contains the commits, blobs (file contents), trees (directory structures), and other Git objects that make up your repository.
 
+- git commit -a
+The -a flag stands for all tracked files.
+
+>$ git commit -a -m "Modified f2 file"
+
+Git will:
+
+1. Automatically stage all modified and deleted tracked files.
+2. Create a commit with the message "Update project".
+
+- git commit -amend
+The --amend option allows you to modify the most recent commit.
+You can use it to:
+
+    - Change the last commit message.
+    - Add files you forgot to include in the last commit.
+    - Update the last commit without creating a new one.
+
+- git commit -s
+It adds a Signed-off-by line to the end of your commit message.
+
+    If your Git username and email are:
+
+    - Name: A Sairam Kumar Patro
+    - Email: itsairamkumar@gmail.com
+
+    Then the commit message will look like this:
+
+    Add login page
+
+    > Signed-off-by: A Sairam Kumar Patro <itsairamkumar@gmail.com>
+
+Why do we use -s?
+ * The -s flag is commonly used in open-source projects. By signing off a commit, you're indicating that you have the right to submit the code and agree to the project's contribution requirements (such as a Developer Certificate of Origin, or DCO).
+
+- git commit --allow-empty
+It is used to create a commit even when there are no changes to commit.
+
+What does it do?
+ * Normally, Git won't let you create a commit if there are no staged changes. With --allow-empty, Git creates an empty commit—a commit that doesn't contain any file changes but is still recorded in the commit history.
+
+Why is it useful?
+ * Empty commits are commonly used to:
+ 
+    - Trigger CI/CD pipelines (GitHub Actions, Jenkins, GitLab CI, etc.).
+    - Mark an important milestone in the project's history.
+    - Test Git hooks or automation.
+    - Start a repository with an initial commit before adding files (less common).
