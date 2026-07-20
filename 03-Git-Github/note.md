@@ -195,8 +195,44 @@ What does it do?
 
 Why is it useful?
  * Empty commits are commonly used to:
- 
+
     - Trigger CI/CD pipelines (GitHub Actions, Jenkins, GitLab CI, etc.).
     - Mark an important milestone in the project's history.
     - Test Git hooks or automation.
     - Start a repository with an initial commit before adding files (less common).
+
+#### Understanding git log
+
+These commands help us view the commit history and understand when commits were made. Git also provides different attributes to customize how the commit history is displayed.
+
+* -n : `git log -n 2`
+  This command displays only the last **2 commits** from the commit history.
+
+* --pretty :
+
+  `git log --pretty=short`
+  This displays a short version of the commit history, including the commit hash, author, and commit message.
+
+  `git log --pretty=full`
+  This displays detailed commit information, including the author, committer, and the complete commit message.
+
+  `git log --pretty=oneline`
+  This displays each commit on a single line, showing the short commit hash and the commit message.
+
+  `git log --pretty=format:"%h %s %an %ae"`
+  This command lets you customize the output format.
+
+  - `%h` = Short commit hash
+  - `%s` = Commit message
+  - `%an` = Author name
+  - `%ae` = Author email address
+
+* -p : `git log -p`
+  This command shows the complete commit history along with the exact changes (diff) made in each commit. It helps you see what lines were added, removed, or modified.
+
+* --since="1 week ago" : `git log --since="1 week ago"`
+  This command displays all commits made during the last one week. You can change the time period as needed, for example:
+
+  - `git log --since="2 days ago"`
+  - `git log --since="1 month ago"`
+  - `git log --since="2026-07-01"`
