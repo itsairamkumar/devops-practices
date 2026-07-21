@@ -184,8 +184,8 @@ It adds a Signed-off-by line to the end of your commit message.
 
     > Signed-off-by: A Sairam Kumar Patro <itsairamkumar@gmail.com>
 
-Why do we use -s?
- * The -s flag is commonly used in open-source projects. By signing off a commit, you're indicating that you have the right to submit the code and agree to the project's contribution requirements (such as a Developer Certificate of Origin, or DCO).
+    Why do we use -s?
+        * The -s flag is commonly used in open-source projects. By signing off a commit, you're indicating that you have the right to submit the code and agree to the project's contribution requirements (such as a Developer Certificate of Origin, or DCO).
 
 - git commit --allow-empty
 It is used to create a commit even when there are no changes to commit.
