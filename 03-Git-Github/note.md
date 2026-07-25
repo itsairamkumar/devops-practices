@@ -234,5 +234,12 @@ These commands help us view the commit history and understand when commits were 
   This command displays all commits made during the last one week. You can change the time period as needed, for example:
 
   - `git log --since="2 days ago"`
+  - `git log --since="yesterday"`
   - `git log --since="1 month ago"`
   - `git log --since="2026-07-01"`
+  - `git log --since="2026-07-01"` --until="2025-07-01"
+  - `git log --author="Sairam"` -- Displays only the commits made by the specified author. Useful for tracking a particular developer's contributions.
+  - `git log --grep="Modified"` -- Searches commit messages for a specific keyword (e.g., "Modified"). Useful for quickly finding bug fixes, feature updates, or specific code changes.
+
+#### Undo commits with git reset
+
