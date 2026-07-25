@@ -241,7 +241,7 @@ These commands help us view the commit history and understand when commits were 
   - `git log --author="Sairam"` -- Displays only the commits made by the specified author. Useful for tracking a particular developer's contributions.
   - `git log --grep="Modified"` -- Searches commit messages for a specific keyword (e.g., "Modified"). Useful for quickly finding bug fixes, feature updates, or specific code changes.
 
-#### Undo commits with git reset
+#### Undoing commits with git reset
 git reset is one of the most important Git commands. It is used to undo commits, move the HEAD to a previous commit, unstage changes, or permanently discard commits and changes.
 
 > Note: Use git reset carefully, especially --hard, as it can permanently delete changes.
@@ -292,4 +292,4 @@ git reset is one of the most important Git commands. It is used to undo commits,
         Use Case:
         - Completely discard unwanted commits and local changes.
 
-#### Undo commits with git revert
+#### Undoing commits with git revert
