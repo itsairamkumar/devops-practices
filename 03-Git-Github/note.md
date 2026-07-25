@@ -242,4 +242,4 @@ These commands help us view the commit history and understand when commits were 
   - `git log --grep="Modified"` -- Searches commit messages for a specific keyword (e.g., "Modified"). Useful for quickly finding bug fixes, feature updates, or specific code changes.
 
 #### Undo commits with git reset
-
+git reset and revert is must important part of the git and github. 
