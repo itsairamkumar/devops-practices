@@ -251,7 +251,7 @@ git reset is one of the most important Git commands. It is used to undo commits,
   - `--mixed` (default)
   - `--hard`
 
-I. Soft Reset (--soft)
+- Soft Reset (--soft)
     - Moves `HEAD` to the specified commit.
     - Keeps the staging area unchanged.
     - Keeps the working directory unchanged.
@@ -263,7 +263,7 @@ I. Soft Reset (--soft)
             git log
             git reset --soft c6f4fe65fd701537cb5ef8f6bbcf893d3536239a
 
-II. Mixed Reset (`--mixed`) (Default)
+- Mixed Reset (`--mixed`) (Default)
     - Moves `HEAD` to the specified commit.
     - Removes changes from the staging area (unstages them).
     - Keeps the working directory unchanged.
@@ -276,7 +276,7 @@ II. Mixed Reset (`--mixed`) (Default)
         git log
         git reset --mixed c6f4fe65fd701537cb5ef8f6bbcf893d3536239a
 
-III. Hard Reset (--hard)
+- Hard Reset (--hard)
     - Moves `HEAD` to the specified commit.
     - Clears the staging area.
     - Resets the working directory to match the specified commit.
@@ -292,3 +292,4 @@ III. Hard Reset (--hard)
         Use Case:
         - Completely discard unwanted commits and local changes.
 
+#### Undo commits with git revert
