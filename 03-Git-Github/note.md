@@ -242,4 +242,53 @@ These commands help us view the commit history and understand when commits were 
   - `git log --grep="Modified"` -- Searches commit messages for a specific keyword (e.g., "Modified"). Useful for quickly finding bug fixes, feature updates, or specific code changes.
 
 #### Undo commits with git reset
-git reset and revert is must important part of the git and github. 
+git reset is one of the most important Git commands. It is used to undo commits, move the HEAD to a previous commit, unstage changes, or permanently discard commits and changes.
+
+> Note: Use git reset carefully, especially --hard, as it can permanently delete changes.
+
+- `git reset` has three modes:
+  - `--soft`
+  - `--mixed` (default)
+  - `--hard`
+
+I. Soft Reset (--soft)
+    - Moves HEAD to the specified commit.
+    - Keeps staging area unchanged.
+    - Keeps working directory unchanged.
+    - Commits are removed, but changes remain staged.
+    
+    *-* `git reset --soft <commit_hash>` -- Removes the commit but keeps all changes staged.
+
+            Example:
+            git log
+            git reset --soft c6f4fe65fd701537cb5ef8f6bbcf893d3536239a
+
+II. Mixed Reset (`--mixed`) (Default)
+    - Moves HEAD to the specified commit.
+    - Removes changes from the staging area (unstages them).
+    - Keeps the working directory unchanged.
+    - Commits are removed, but changes remain in your local files.
+    - This is the default mode of git reset.
+
+    *-* `git reset --mixed <commit_hash>` -- Removes the commit but keeps all changes staged.
+
+        Example:
+        git log
+        git reset --mixed c6f4fe65fd701537cb5ef8f6bbcf893d3536239a
+
+III. Hard Reset (--hard)
+    - Moves HEAD to the specified commit.
+    - Clears the staging area.
+    - Resets the working directory to match the specified commit.
+    - Commits are removed, and all local changes are permanently deleted.
+    - Use this mode with extreme caution.    
+
+    *-* `git reset --hard <commit_hash>` -- Removes the commit and permanently deletes all staged and unstaged changes. The working directory is restored to the selected commit.
+
+        Example:
+        git log
+        git reset --hard c6f4fe65fd701537cb5ef8f6bbcf893d3536239a
+
+        Use Case:
+        - Completely discard unwanted commits and local changes.
+
