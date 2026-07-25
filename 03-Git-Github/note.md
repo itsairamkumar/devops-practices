@@ -252,10 +252,10 @@ git reset is one of the most important Git commands. It is used to undo commits,
   - `--hard`
 
 I. Soft Reset (--soft)
-        - Moves HEAD to the specified commit.
-        - Keeps staging area unchanged.
-        - Keeps working directory unchanged.
-        - Commits are removed, but changes remain staged.
+    - Moves `HEAD` to the specified commit.
+    - Keeps the staging area unchanged.
+    - Keeps the working directory unchanged.
+    - Removes the commit(s), but keeps all changes staged.
     
     *-* `git reset --soft <commit_hash>` -- Removes the commit but keeps all changes staged.
 
@@ -264,11 +264,11 @@ I. Soft Reset (--soft)
             git reset --soft c6f4fe65fd701537cb5ef8f6bbcf893d3536239a
 
 II. Mixed Reset (`--mixed`) (Default)
-        - Moves HEAD to the specified commit.
-        - Removes changes from the staging area (unstages them).
-        - Keeps the working directory unchanged.
-        - Commits are removed, but changes remain in your local files.
-        - This is the default mode of git reset.
+    - Moves `HEAD` to the specified commit.
+    - Removes changes from the staging area (unstages them).
+    - Keeps the working directory unchanged.
+    - Removes the commit(s), but keeps all changes in your local files.
+    - This is the default mode of `git reset`.
 
     *-* `git reset --mixed <commit_hash>` -- Removes the commit but keeps all changes staged.
 
@@ -277,11 +277,11 @@ II. Mixed Reset (`--mixed`) (Default)
         git reset --mixed c6f4fe65fd701537cb5ef8f6bbcf893d3536239a
 
 III. Hard Reset (--hard)
-        - Moves HEAD to the specified commit.
-        - Clears the staging area.
-        - Resets the working directory to match the specified commit.
-        - Commits are removed, and all local changes are permanently deleted.
-        - Use this mode with extreme caution.    
+    - Moves `HEAD` to the specified commit.
+    - Clears the staging area.
+    - Resets the working directory to match the specified commit.
+    - Removes the commit(s) and permanently deletes all local changes.
+    - Use this mode with extreme caution.
 
     *-* `git reset --hard <commit_hash>` -- Removes the commit and permanently deletes all staged and unstaged changes. The working directory is restored to the selected commit.
 
