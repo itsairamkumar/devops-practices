@@ -38,7 +38,7 @@ In this example, I'll use the nano command to create a file.
 
 > $ nano test.txt
 
-**How do we create a local Git repository?**
+How do we create a local Git repository?
 
 To create a local Git repository, we use the 'git init' command.
 
@@ -65,7 +65,7 @@ The second way to view hidden files is by using the `ls -al` command.
 >$ ls -al
 
 
-This command displays **all files and folders**, including hidden ones (such as the `.git` directory).
+This command displays all files and folders, including hidden ones (such as the `.git` directory).
 
 - git status
 
@@ -206,7 +206,7 @@ Why is it useful?
 These commands help us view the commit history and understand when commits were made. Git also provides different attributes to customize how the commit history is displayed.
 
 * -n : `git log -n 2`
-  This command displays only the last **2 commits** from the commit history.
+  This command displays only the last 2 commits from the commit history.
 
 * --pretty :
 
@@ -317,21 +317,21 @@ When we want to create a branch in our local system, first we need to initialize
 
 Generally, in organizations, the `main` or `master` branch is used as the primary branch, and other branches are created when required, such as for developers, feature development, bug fixes, or other roles.
 
-Another important point is that whenever we create a commit, Git generates a unique **SHA-1 algorithm-based hash** for that commit.
+Another important point is that whenever we create a commit, Git generates a unique SHA-1 algorithm-based hash for that commit.
 
 `HEAD` is a pointer to the latest commit, and its position changes whenever a new commit is created or when we switch to another branch.
 
     For example:
 
     - First, I create a file named `f1.txt`.
-    - Initially, it stays in the **Working Directory (non-staging area)**.
+    - Initially, it stays in the Working Directory (non-staging area).
     - After running:
 
         ```bash
         git add f1.txt
         ```
 
-    - The file moves to the **Staging Area**.
+    - The file moves to the Staging Area.
 
 Then I commit it:
 
@@ -339,7 +339,7 @@ Then I commit it:
         git commit -m "Added f1.txt"
         ```
 
-    - Git creates a commit (snapshot) with information like **Who, When, and Message**.
+    - Git creates a commit (snapshot) with information like Who, When, and Message.
     - At this point, `HEAD` points to this latest commit.
 
 Next, I create another file `f2.txt` and commit it in the same way.
@@ -363,7 +363,7 @@ We can create branches based on the author name, role name, feature name, or pro
         git branch feature-login
         git branch bugfix
         ```
-    Creating a branch **does not move the `HEAD`**. `HEAD` changes only when you switch to another branch.
+    Creating a branch does not move the `HEAD`. `HEAD` changes only when you switch to another branch.
 
     Example:
         ```bash
@@ -377,7 +377,7 @@ We can create branches based on the author name, role name, feature name, or pro
 
     After switching, `HEAD` points to the `dev` branch.
     
-    **Creating and Switching Branches**
+    Creating and Switching Branches
 
         In this practice session:
 
@@ -407,7 +407,7 @@ We can create branches based on the author name, role name, feature name, or pro
         - `main`
         - `krishna`
 
-        - The `*` symbol indicates the **currently active branch**. Initially, it was on `main`.
+        - The `*` symbol indicates the currently active branch. Initially, it was on `main`.
 
         - Finally, I switched from the `main` branch to the `krishna` branch using:
 
@@ -419,13 +419,13 @@ We can create branches based on the author name, role name, feature name, or pro
 
     Why Do We Use Git Branches?
 
-        - **Isolation** – Developers can work independently without affecting the main codebase.
-        - **Parallel Development** – Multiple developers can work on different features at the same time.
-        - **Bug Fixes** – Critical bugs can be fixed in a separate branch without interrupting ongoing development.
-        - **Feature Development** – Every new feature is developed in its own branch before merging into the main branch.
-        - **Safe Experimentation** – Developers can test new ideas without risking the stable code.
-        - **Easy Code Review** – Branches are reviewed through Pull Requests (PRs) before merging.
-        - **Version Management** – Different release versions can be maintained using release branches.
-        - **Team Collaboration** – Makes collaboration easier when multiple developers work on the same project.
-        - **Easy Rollback** – If something goes wrong, the problematic branch can be discarded without affecting the main branch.
-        - **CI/CD Integration** – Organizations automatically build, test, and deploy code from specific branches using CI/CD pipelines.
+        - Isolation – Developers can work independently without affecting the main codebase.
+        - Parallel Development – Multiple developers can work on different features at the same time.
+        - Bug Fixes – Critical bugs can be fixed in a separate branch without interrupting ongoing development.
+        - Feature Development – Every new feature is developed in its own branch before merging into the main branch.
+        - Safe Experimentation – Developers can test new ideas without risking the stable code.
+        - Easy Code Review – Branches are reviewed through Pull Requests (PRs) before merging.
+        - Version Management – Different release versions can be maintained using release branches.
+        - Team Collaboration – Makes collaboration easier when multiple developers work on the same project.
+        - Easy Rollback – If something goes wrong, the problematic branch can be discarded without affecting the main branch.
+        - CI/CD Integration – Organizations automatically build, test, and deploy code from specific branches using CI/CD pipelines.
