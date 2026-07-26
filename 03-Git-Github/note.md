@@ -310,4 +310,70 @@ git reset is one of the most important Git commands. It is used to undo commits,
         Example:
         >$ git switch -c feature-branch
 
+#### Understanding Branches in Git
+How do we use branches?
+
+When we want to create a branch in our local system, first we need to initialize a Git repository using `git init`. After initialization, Git creates the default branch (`master` in older versions or `main` in newer versions).
+
+Generally, in organizations, the `main` or `master` branch is used as the primary branch, and other branches are created when required, such as for developers, feature development, bug fixes, or other roles.
+
+Another important point is that whenever we create a commit, Git generates a unique **SHA-1 algorithm-based hash** for that commit.
+
+`HEAD` is a pointer to the latest commit, and its position changes whenever a new commit is created or when we switch to another branch.
+
+    For example:
+
+    - First, I create a file named `f1.txt`.
+    - Initially, it stays in the **Working Directory (non-staging area)**.
+    - After running:
+
+        ```bash
+        git add f1.txt
+        ```
+
+    - The file moves to the **Staging Area**.
+
+Then I commit it:
+
+        ```bash
+        git commit -m "Added f1.txt"
+        ```
+
+    - Git creates a commit (snapshot) with information like **Who, When, and Message**.
+    - At this point, `HEAD` points to this latest commit.
+
+Next, I create another file `f2.txt` and commit it in the same way.
+
+    - A new commit is created.
+    - `HEAD` automatically moves to the latest commit.
+
+We can create branches based on the author name, role name, feature name, or project requirement.
+
+    Branch names are usually based on:
+        - Developer name
+        - Feature name
+        - Bug fix
+        - Release version
+        - Team or role
+
+    Example:
+
+        ```bash
+        git branch developer
+        git branch feature-login
+        git branch bugfix
+        ```
+    Creating a branch **does not move the `HEAD`**. `HEAD` changes only when you switch to another branch.
+
+    Example:
+        ```bash
+        git switch dev
+        ```
+    
+    or
+        ```bash
+        git checkout dev
+        ```
+
+    After switching, `HEAD` points to the `dev` branch.
     
