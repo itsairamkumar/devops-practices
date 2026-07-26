@@ -293,3 +293,22 @@ git reset is one of the most important Git commands. It is used to undo commits,
         - Completely discard unwanted commits and local changes.
 
 #### Undoing commits with git revert
+    - `git revert <commit_hash>` -- Creates a new commit that undoes the changes made by the specified commit without deleting the commit history.
+    - Safe to use on shared or remote repositories because it preserves Git history.
+
+        Example:
+        >$ git revert 4cf39ec
+
+    - Viewing an Older Commit
+        - git checkout <commit_hash> -- Switches to a specific commit in detached HEAD state for viewing or testing.
+
+        Example:
+        >$ git checkout 4cf39ec
+
+    - Creating a Branch from an Older Commit
+        - git switch -c <branch_name> -- Creates and switches to a new branch from the currently checked-out commit.
+
+        Example:
+        >$ git switch -c feature-branch
+        
+    
