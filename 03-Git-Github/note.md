@@ -377,3 +377,44 @@ We can create branches based on the author name, role name, feature name, or pro
 
     After switching, `HEAD` points to the `dev` branch.
     
+    **Creating and Switching Branches**
+
+        In this practice session:
+
+        - First, I checked the existing branches using:
+
+        ```bash
+        git branch
+        ```
+
+        - It showed that only the `main` branch was available.
+
+        - Then I created a new branch with my name:
+
+        ```bash
+        git branch krishna
+        ```
+
+        > You can create a branch using your own name, role name, feature name, or project requirement.
+
+        - After that, I checked the branches again:
+
+        ```bash
+        git branch
+        ```
+
+        - Now it showed two branches:
+        - `main`
+        - `krishna`
+
+        - The `*` symbol indicates the **currently active branch**. Initially, it was on `main`.
+
+        - Finally, I switched from the `main` branch to the `krishna` branch using:
+
+        ```bash
+        git checkout krishna
+        ```
+
+        - Now I am working on the `krishna` branch instead of the `main` branch.
+
+bracnhes hume isolation deta he.
