@@ -417,4 +417,15 @@ We can create branches based on the author name, role name, feature name, or pro
 
         - Now I am working on the `krishna` branch instead of the `main` branch.
 
-bracnhes hume isolation deta he.
+    Why Do We Use Git Branches?
+
+        - **Isolation** – Developers can work independently without affecting the main codebase.
+        - **Parallel Development** – Multiple developers can work on different features at the same time.
+        - **Bug Fixes** – Critical bugs can be fixed in a separate branch without interrupting ongoing development.
+        - **Feature Development** – Every new feature is developed in its own branch before merging into the main branch.
+        - **Safe Experimentation** – Developers can test new ideas without risking the stable code.
+        - **Easy Code Review** – Branches are reviewed through Pull Requests (PRs) before merging.
+        - **Version Management** – Different release versions can be maintained using release branches.
+        - **Team Collaboration** – Makes collaboration easier when multiple developers work on the same project.
+        - **Easy Rollback** – If something goes wrong, the problematic branch can be discarded without affecting the main branch.
+        - **CI/CD Integration** – Organizations automatically build, test, and deploy code from specific branches using CI/CD pipelines.
